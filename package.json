@@ -5,24 +5,35 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js"
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omar-anas/Task-Manager-Api.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omar-anas/Task-Manager-Api/issues"
+  },
+  "homepage": "https://github.com/omar-anas/Task-Manager-Api#readme",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3"
+  },
   "dependencies": {
     "@sendgrid/mail": "^7.4.5",
     "bcrypt": "^5.0.1",
-    "env-cmd": "^10.1.0",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.6.4",
-    "mongoose": "^5.12.3",
-    "multer": "^1.4.1",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.3",
+    "multer": "^1.4.2",
     "sharp": "^0.28.3",
-    "validator": "^13.5.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "validator": "^13.6.0"
   }
 }
